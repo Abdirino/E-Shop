@@ -1,0 +1,19 @@
+@font-face {
+    font-family: ramus;
+    src: url(ramus-font/RamusMedium-ALX07.ttf);
+}
+@font-face {
+    font-family: caghen;
+    src: url(caghen-serif-font-1669857632-0/caghen-demo.ttf);
+}
+
+*{
+    margin: 0; padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: ramus;
+}
+html{
+    scroll-behavior: smooth;
+}
