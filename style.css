@@ -41,6 +41,9 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 5000;
 }
 header .logo{
     color: white;
@@ -69,35 +72,76 @@ header .icon a i{
 header .icon a i:hover{
     color: #00BDC9;
 }
+header #toggler{
+    display: none;
+}
+label{
+    display: none;
+}
+header .bx-menu{
+    font-size: 40px;
+    color: whitesmoke;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.303);
+    display: none;
+}   
 /* end nav sec */
+
 /* home sec */
-.home{
-    width: 100%;
-    height: 85vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-image: url(images/wallpaperflare.com_wallpaper\ \(1\).jpg);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-/* .home::after,
-.home::before{
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.245);
-} */
-.home .content{
-    display: flex;
-    flex-direction: column;
-}
-.home .content h1{
-    width: 600px;
-    color: white;
-    font-family: caghen;
-    font-size: 85px;
-}
+
 /* end home sec */
+
+
+
+
+
+
+
+
+
+@media (max-width: 860px){
+    label{
+        display: block;
+    }
+    header .bx-menu{
+        display: block;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(0, 0, 0, 0.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: .5s ease;
+    }
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    header .navbar a{
+        margin: 10px;
+        padding: 5px;
+        background: #fff;
+        border: 1rem solid rgba(0, 0, 0, 0.108);
+        display: block;
+        color: black;
+    }
+    header .logo{
+        font-size: 45px;
+    }
+    header .icon a i{
+        font-size: 28px;
+        padding: 4px;
+    }
+} 
+@media (max-width: 400px){
+    header .logo{
+        font-size: 35px;
+    }
+    header .icon a i{
+        font-size: 28px;
+        padding: 2px;
+    }
+}
