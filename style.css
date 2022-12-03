@@ -220,12 +220,43 @@ header .bx-menu{
     background: #00BDC9;
     color: white;
 }
+.latest{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #00BDC9;
+}
 .latest h1{
     font-family: caghen;
     font-size: 40px;
     border-bottom: 3px solid #0f4676;
     width: fit-content;
     padding: 10px;
+}
+.latest .items{
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 300px;
+    gap: 1.5rem; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+}
+.latest .items .item{
+    flex: 1 1 300px;
+    height: 300px;
+    margin: 10px;
+    background: #134982;
+    box-shadow: 7px 14px 28px rgba(0, 0, 0, 0.747);
+}
+.item img{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
 }
 /* end product sec */
 
