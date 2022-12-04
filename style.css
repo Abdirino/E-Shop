@@ -98,7 +98,7 @@ header .bx-menu{
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 75vh;
+    height: 70vh;
     -webkit-animation: color-change-2x 2s linear infinite alternate both;
 	        animation: color-change-2x 2s linear infinite alternate both;
 }
@@ -110,6 +110,7 @@ header .bx-menu{
     flex-direction: column;
 }
 .home .content h1{
+    padding: 20px;
     font-family: caghen;
     font-size: 60px;
     margin-top: 20px;
@@ -159,9 +160,9 @@ header .bx-menu{
     align-items: center;
     text-align: center;
     flex-direction: column;
-    padding: 50px 0;
 }
 .trending{
+    padding: 60px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -228,12 +229,31 @@ header .bx-menu{
     flex-direction: column;
     background: #00BDC9;
 }
+.wave {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(118% + 1.3px);
+    height: 94px;
+}
+
+.wave .shape-fill {
+    fill: #FFFFFF;
+}
 .latest h1{
     font-family: caghen;
     font-size: 40px;
     border-bottom: 3px solid #0f4676;
     width: fit-content;
-    padding: 10px;
+    padding: 30px;
 }
 .latest .items{
     /* display: grid;
@@ -247,16 +267,35 @@ header .bx-menu{
     padding: 25px 0;
 }
 .latest .items .item{
+    row-gap: 1rem;
+    border-radius: 4px;
     flex: 1 1 300px;
     height: 300px;
     margin: 10px;
-    background: #134982;
     box-shadow: 7px 14px 28px rgba(0, 0, 0, 0.747);
 }
-.item img{
+.items .item img{
     width: 100%;
-    height: 60%;
+    height: 80%;
     object-fit: cover;
+}
+.items .item .details h2{
+    width: fit-content;
+    font-size: 20px;
+    font-family: caghen;
+    color: #000000;
+    padding: 4px;
+    margin: 12px 0 10px 10px;
+    letter-spacing: 1.5px;
+}
+.items .item .details p{
+    font-size: 16px;
+    font-family: ramus;
+    padding: 6px;
+    letter-spacing: 1px;
+    color: white;
+    margin: 20px;
+    display: inline;
 }
 /* end product sec */
 
@@ -269,6 +308,13 @@ header .bx-menu{
 
 
 @media (max-width: 860px){
+    .latest h1{
+        padding: 15px;
+    }
+    .home .content h1{
+        font-size: 50px;
+        margin: auto;
+    }
     label{
         display: block;
     }
