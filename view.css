@@ -1,0 +1,106 @@
+@font-face {
+    font-family: ramus;
+    src: url(ramus-font/RamusMedium-ALX07.ttf);
+}
+@font-face {
+    font-family: caghen;
+    src: url(caghen-serif-font-1669857632-0/caghen-demo.ttf);
+}
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+/* nav sec */
+header{
+    width: 100%;
+    height: 70px;
+    background: #134982;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.64);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 5000;
+}
+header .logo{
+    color: white;
+    font-family: caghen;
+    font-size: 60px;
+    padding: 8px 0 8px 5px;
+}
+header .logo span{
+    color: #00BDC9;
+}
+header .navbar a{
+    color: white;
+    font-size: 25px;
+    font-family: ramus;
+    padding: 20px 7px;
+}
+header .navbar a:hover{
+    color: #00BDC9;
+}
+header .icon a i{
+    font-size: 40px;
+    padding: 7px;
+    font-family: caghen;
+    color: white;
+}
+header .icon a i:hover{
+    color: #00BDC9;
+}
+header #toggler{
+    display: none;
+}
+label{
+    display: none;
+}
+header .bx-menu{
+    font-size: 40px;
+    color: whitesmoke;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.303);
+    display: none;
+}
+/* end nav sec */
+
+
+/* product sec */
+.product {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 80px 0;
+}
+
+.img {
+    flex: 1 1 400px;
+    height: 300px;
+    width: 400px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.76);
+}
+
+.img img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.details {
+    height: 300px;
+    width: 400px;
+    flex: 1 1 400px;
+    background: rgba(127, 255, 212, 0.581);
+    box-shadow: 3px 6px 18px rgb(0, 0, 0);
+}
+/* end product sec */
