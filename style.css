@@ -309,6 +309,21 @@ header .bx-menu{
     display: block;
     text-decoration: line-through;
 }
+.items .item .details a{
+    float: right;
+    margin: -45px 6px 0 0;
+    padding: 18px 40px;
+    border-radius: 15px;
+    background: #00BDC9;
+    color: black;
+    font-size: 16px;
+    font-family: ramus;
+    letter-spacing: 1px;
+}
+.items .item .details a:hover{
+    color: white;
+    background: #0f4676;
+}
 /* end product sec */
 
 
