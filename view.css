@@ -145,7 +145,7 @@ header .bx-menu{
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
-    margin: 90px 0 0 0;
+    margin: 150px 0 30px 0;
     padding: 10px;
     background: #444;
 }
@@ -153,6 +153,10 @@ header .bx-menu{
     display: inline;
 }
 .ratings .stars .bxs-star{
+    font-size: 30px;
+    color: gold;
+}
+.ratings .stars .bx-star{
     font-size: 30px;
     color: gold;
 }
@@ -170,6 +174,12 @@ header .bx-menu{
     font-size: 40px;
     color: goldenrod;
     padding: 5px 13px;
+    cursor: pointer;
+}
+.ratings .share i:hover{
+    color: red;
+    transform: scale(1.15);
+    transition: 1s ease;
 }
 /* end product sec */
 
