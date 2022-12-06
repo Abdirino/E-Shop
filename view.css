@@ -103,4 +103,41 @@ header .bx-menu{
     background: rgba(127, 255, 212, 0.581);
     box-shadow: 3px 6px 18px rgb(0, 0, 0);
 }
+.details h1{
+    font-family: caghen;
+    font-size: 50px;
+    padding: 10px;
+}
+.details h3{
+    font-family: ramus;
+    font-size: 20px;
+    padding: 15px;
+}
+.details p{
+    font-family: ramus;
+    padding: 10px;
+    font-size: 26px;
+}
+.details span{
+    display: inline;
+    font-family: ramus;
+    padding: 8px;
+    text-decoration: line-through;
+    margin-top: -10px;
+}
+.details a{
+    width: fit-content;
+    padding: 8px 70px;
+    border-radius: 10px;
+    background: #134982;
+    margin: -10px 0 0 150px;
+    display: block;
+    color: white;
+    font-size: 20px;
+    font-family: ramus;
+}
+.details a:hover{
+    background: #00BDC9;
+    color: black;
+}
 /* end product sec */
