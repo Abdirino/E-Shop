@@ -97,7 +97,6 @@ header .bx-menu{
 }
 
 .details {
-    height: 300px;
     width: 400px;
     flex: 1 1 400px;
     background: rgba(127, 255, 212, 0.581);
@@ -130,7 +129,7 @@ header .bx-menu{
     padding: 8px 70px;
     border-radius: 10px;
     background: #134982;
-    margin: -10px 0 0 150px;
+    margin: 10px 0 10px 50px;
     display: block;
     color: white;
     font-size: 20px;
@@ -140,4 +139,57 @@ header .bx-menu{
     background: #00BDC9;
     color: black;
 }
+
+.ratings{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    margin: 90px 0 0 0;
+    padding: 10px;
+    background: #444;
+}
+.ratings .stars{
+    display: inline;
+}
+.ratings .stars .bxs-star{
+    font-size: 30px;
+    color: gold;
+}
+.ratings .stars .bxs-star-half{
+    font-size: 30px;
+    color: gold;
+}
+.ratings .stars p{
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.ratings .share i{
+    font-size: 40px;
+    color: goldenrod;
+    padding: 5px 13px;
+}
 /* end product sec */
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 400px){
+    header .logo{
+        font-size: 35px;
+    }
+    header .icon a i{
+        font-size: 28px;
+        padding: 2px;
+    }
+}
