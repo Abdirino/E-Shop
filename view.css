@@ -179,7 +179,12 @@ header .bx-menu{
 .ratings .share i:hover{
     color: red;
     transform: scale(1.15);
-    transition: 1s ease;
+    transition: .3s ease;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 /* end product sec */
 

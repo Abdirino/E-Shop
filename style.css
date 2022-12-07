@@ -86,7 +86,7 @@ header .bx-menu{
     padding: .5rem 1rem;
     margin: 5px;
     cursor: pointer;
-    border: 1px solid rgba(0, 0, 0, 0.303);
+    /* border: 1px solid rgba(0, 0, 0, 0.303); */
     display: none;
 }   
 /* end nav sec */
@@ -384,3 +384,9 @@ header .bx-menu{
         padding: 2px;
     }
 }
+/* offer sec */
+.offers{
+    display: grid;
+    grid-template-columns: repeat();
+}
+/* end offer sec */
