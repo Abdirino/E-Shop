@@ -70,13 +70,13 @@
             cartNum.innerHTML = current[name];
             cartFile.style.visibility = "visible";
             toCart.innerHTML = "Remove from Cart";
-            toCart.style.padding = "10px";
+            // toCart.style.padding = "10px 20px";
             }
         toCart.addEventListener("click", () => {
             var object = {};
                 object[name] = 1;
             current = JSON.parse(sessionStorage.getItem("cart"));
-            toCart.style.padding = "10px";
+            // toCart.style.padding = "10px";
             if(current == null){
                 sessionStorage.setItem("cart", JSON.stringify(object))
                 cartNum.innerHTML = 1;

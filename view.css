@@ -129,10 +129,10 @@ header .bx-menu{
     padding: 8px 70px;
     border-radius: 10px;
     background: #134982;
-    margin: 10px 0 10px 50px;
+    margin: 10px 0 10px 40px;
     display: block;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     font-family: ramus;
     border: none;
     cursor: pointer;
@@ -149,7 +149,7 @@ header .bx-menu{
     align-items: center;
     margin: 150px 0 30px 0;
     padding: 10px;
-    background: #444;
+    background: rgb(12, 12, 12);
 }
 .ratings .stars{
     display: inline;

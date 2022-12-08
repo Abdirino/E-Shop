@@ -204,7 +204,7 @@ header .bx-menu{
     background: #0f4676;
     box-shadow: 9px 18px 32px rgba(0, 0, 0, 0.686);
     flex-direction: column;
-    /* height: 400px; */
+    height: 400px;
     text-align: center;
     border-radius: 3px;
 }
