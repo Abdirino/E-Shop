@@ -76,6 +76,22 @@ header .icon a i:hover{
 header #toggler{
     display: none;
 }
+.cart-file{
+    position: absolute;
+    top: 0; right: 0;
+    background: black;
+    color: white;
+    width:20px; height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    font-family: ramus;
+    font-weight: bold;
+    visibility: hidden;
+}
+.cart-tag{
+    position: relative;
+    display: inline-block;
+}
 label{
     display: none;
 }
@@ -188,7 +204,7 @@ header .bx-menu{
     background: #0f4676;
     box-shadow: 9px 18px 32px rgba(0, 0, 0, 0.686);
     flex-direction: column;
-    height: 400px;
+    /* height: 400px; */
     text-align: center;
     border-radius: 3px;
 }
@@ -335,6 +351,19 @@ header .bx-menu{
 
 
 @media (max-width: 860px){
+    .cart-file{
+        position: absolute;
+        top: 0; right: 0;
+        background: black;
+        color: white;
+        width: 15px; height: 15px;
+        border-radius: 50%;
+        font-size: 10px;
+        text-align: center;
+        font-family: ramus;
+        /* font-weight: bold; */
+        visibility: hidden;
+    }
     .latest h1{
         padding: 15px;
     }

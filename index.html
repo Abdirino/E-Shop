@@ -28,7 +28,9 @@
 
         <div class="icon">
             <a href="#home" class=""><i class='bx bxs-home'></i></a>
-            <a href="#" class=""><i class='bx bx-cart-alt'></i></a>
+            <a href="cart.html" class="cart-tag"><i class='bx bx-cart-alt'></i>
+                <div class="cart-file" id="cart-num"></div>
+            </a>
             <a href="#" class=""><i class='bx bxs-contact'></i></a>
         </div>
     </header>
@@ -69,7 +71,7 @@
                         <img src="images/iil-236693-643232.avif" alt="">
                         <div class="des">
                             <h2>Gaming Products</h2>
-                            <p>Get High End Gaming products from top companies like Acer and AlienWare 10% OFF!</p>
+                            <p>Get High End Gaming products 10% OFF!</p>
                             <button>Shop Now</button>
                         </div>
                     </div>
@@ -168,5 +170,15 @@
     </div>
     <!-- end offer sec -->
 </body>
+
+<script defer>
+    let cartFile = document.querySelector(".cart-file");
+    let cartNum = document.getElementById("cart-num");
+    var current = JSON.parse(sessionStorage.getItem("cart"));
+        if(current != null){
+        cartNum.innerHTML = current[name];
+        cartFile.style.visibility = "visible";
+        }
+</script>
 
 </html>

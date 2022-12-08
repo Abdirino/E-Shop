@@ -124,7 +124,7 @@ header .bx-menu{
     text-decoration: line-through;
     margin-top: -10px;
 }
-.details a{
+.details .add{
     width: fit-content;
     padding: 8px 70px;
     border-radius: 10px;
@@ -134,8 +134,10 @@ header .bx-menu{
     color: white;
     font-size: 20px;
     font-family: ramus;
+    border: none;
+    cursor: pointer;
 }
-.details a:hover{
+.details .add:hover{
     background: #00BDC9;
     color: black;
 }
@@ -187,6 +189,22 @@ header .bx-menu{
     justify-content: space-between;
 }
 /* end product sec */
+.cart-file{
+    position: absolute;
+    top: 0; right: 0;
+    background: black;
+    color: white;
+    width:20px; height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    font-family: ramus;
+    font-weight: bold;
+    visibility: hidden;
+}
+.cart-tag{
+    position: relative;
+    display: inline-block;
+}
 
 
 
@@ -195,9 +213,65 @@ header .bx-menu{
 
 
 
-
-
-
+@media (max-width: 860px){
+    .cart-file{
+        position: absolute;
+        top: 0; right: 0;
+        background: black;
+        color: white;
+        width: 15px; height: 15px;
+        border-radius: 50%;
+        font-size: 10px;
+        text-align: center;
+        font-family: ramus;
+        /* font-weight: bold; */
+        visibility: hidden;
+    }
+    .latest h1{
+        padding: 15px;
+    }
+    .home .content h1{
+        font-size: 50px;
+        margin: auto;
+    }
+    label{
+        display: none;
+    }
+    header .bx-menu{
+        display: block;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(0, 0, 0, 0.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: .5s ease;
+    }
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    header .navbar a{
+        margin: 10px;
+        padding: 5px;
+        background: #fff;
+        border: 1rem solid rgba(0, 0, 0, 0.108);
+        display: block;
+        color: black;
+    }
+    header .logo{
+        font-size: 45px;
+    }
+    header .icon a i{
+        font-size: 28px;
+        padding: 4px;
+    }
+}
+@media (max-width: 900px){
+    .ratings{
+        display: none;
+    }
+}
 
 @media (max-width: 400px){
     header .logo{
