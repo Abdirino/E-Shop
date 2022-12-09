@@ -125,6 +125,17 @@ header .bx-menu{
     align-items: center;
     flex-direction: column;
 }
+/* .hidden{
+    opacity: 1;
+    filter: blur(4px);
+    transform: translateY(-100px);
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+} */
 .home .content h1{
     padding: 20px;
     font-family: caghen;
@@ -467,9 +478,11 @@ header .bx-menu{
 @media (max-width: 860px){
     .contact h1{
         font-size: 35px;
+        margin: auto;
     }
     .contact h3{
         font-size: 25px;
+        margin: auto;
     }
     .off{
         flex-wrap: wrap;
@@ -536,9 +549,3 @@ header .bx-menu{
         padding: 2px;
     }
 }
-/* offer sec */
-.offers{
-    display: grid;
-    grid-template-columns: repeat();
-}
-/* end offer sec */
