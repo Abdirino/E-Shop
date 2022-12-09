@@ -399,8 +399,60 @@ header .bx-menu{
 /* end offers sec */
 /* contact sec */
 .contact{
-    height: 100vh;
-    padding: 60px 0;
+    background: #134982;
+    /* height: 100vh; */
+    padding: 70px 0 0 0;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+.contact h1{
+    font-family: caghen;
+    font-size: 50px;
+    color: #00BDC9;
+    padding: 4px;
+}
+.contact h3{
+    font-family: ramus;
+    font-size: 30px;
+    color: #00BDC9;
+    padding: 7px;
+    border-bottom: 2px solid #ffffff;
+}
+.contact .info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.contact .info .icons{
+    padding: 15px;
+}
+.contact .info .icons i{
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 40px;
+    color: #00BDC9;
+    cursor: pointer;
+    transition: .6s ease;
+}
+.contact .info .icons i:hover{
+    transform: scale(1.2);
+}
+.contact .info .location{
+    padding: 0 20px;
+}
+.contact .info .location h2{
+    font-size: 35px;
+    font-family: caghen;
+    color: #4ceffb;
+}
+.contact .info .location p{
+    font-size: 25px;
+    color: #76ebf4;
+    font-family: ramus;
+    padding: 4px 30px;
+    margin: auto;
 }
 /* end contact sec */
 
@@ -413,6 +465,12 @@ header .bx-menu{
 
 
 @media (max-width: 860px){
+    .contact h1{
+        font-size: 35px;
+    }
+    .contact h3{
+        font-size: 25px;
+    }
     .off{
         flex-wrap: wrap;
     }
