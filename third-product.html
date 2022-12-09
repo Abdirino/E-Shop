@@ -68,6 +68,7 @@
         var current = JSON.parse(sessionStorage.getItem("cart"));
             if(current != null){
             cartNum.innerHTML = current[name];
+            
             cartFile.style.visibility = "visible";
             toCart.innerHTML = "Remove from Cart";
             // toCart.style.padding = "10px 20px";
@@ -88,7 +89,6 @@
             sessionStorage.removeItem("cart");
             toCart.innerHTML = "Add to Cart";
             }        })
-
     </script>
 </body>
 

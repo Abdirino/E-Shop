@@ -80,8 +80,11 @@
         </div>
 
         <div class="latest wave" id="latest">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
             </svg>
             <h1>Latest Products</h1>
             <div class="items">
@@ -136,7 +139,7 @@
                 <div class="item">
                     <img src="images/download.jfif" alt="">
                     <div class="details">
-                        <h2>Macbook Pro 2022</h2>
+                        <h2>MacBook Pro 2022</h2>
                         <p>$2199</p><span>$2099</span>
                         <a href="7th-product.html">View</a>
                     </div>
@@ -144,7 +147,7 @@
                 <div class="item">
                     <img src="images/Sony-WH-1000XM5-Headphones-at-GrandHub.webp" alt="">
                     <div class="details">
-                        <h2>Sony WH 1000XM5 Headphones</h2>
+                        <h2>Sony WH 1000XM5</h2>
                         <p>$499</p><span>$549</span>
                         <a href="8th-product.html">View</a>
                     </div>
@@ -152,7 +155,7 @@
                 <div class="item">
                     <img src="images/oled-model-promo.avif" alt="">
                     <div class="details">
-                        <h2>Oled Nintendo Switch</h2>
+                        <h2>Led Nintendo Switch</h2>
                         <p>$699</p><span>$799</span>
                         <a href="9th-product.html">View</a>
                     </div>
@@ -164,9 +167,26 @@
 
     <!-- offer sec -->
     <div class="offers" id="offer">
-        <div class="offer"></div>
-        <div class="offer"></div>
-        <div class="offer"></div>
+        <div class="description">
+            <h1>Edge <span>Mart</span>. E-Shop</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam libero, quo, earum, error ad dolore fugiat corporis alias eius neque magni quia. Unde eum vel molestiae non deleniti exercitationem ducimus!
+            Dolores doloremque a cum ab! Animi consequuntur, non temporibus, sequi reiciendis optio error explicabo, doloremque quos nobis asperiores itaque. Nihil molestiae soluta molestias cum earum eos, culpa dolor id dolore.
+        </p>
+        </div>
+        <div class="off">
+            <div class="offer">
+                <i class='bx bxs-truck' ></i>
+                <p>Free Deliveries on orders within the city</p>
+            </div>
+            <div class="offer">
+                <i class='bx bxs-package' ></i>
+                <p>Concealed and highly secured packages to your doorstep</p>
+            </div>
+            <div class="offer">
+                <i class='bx bxs-conversation'></i>
+                <p>Highly reliable 24/7 customer services</p>
+            </div>
+        </div>
     </div>
     <!-- end offer sec -->
 </body>
@@ -175,10 +195,10 @@
     let cartFile = document.querySelector(".cart-file");
     let cartNum = document.getElementById("cart-num");
     var current = JSON.parse(sessionStorage.getItem("cart"));
-        if(current != null){
+    if (current != null) {
         cartNum.innerHTML = current[name];
         cartFile.style.visibility = "visible";
-        }
+    }
 </script>
 
 </html>
