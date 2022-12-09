@@ -343,6 +343,7 @@ header .bx-menu{
 /* end product sec */
 /* offers sec */
 .offers{
+    padding: 60px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -396,6 +397,12 @@ header .bx-menu{
     letter-spacing: .6px;
 }
 /* end offers sec */
+/* contact sec */
+.contact{
+    height: 100vh;
+    padding: 60px 0;
+}
+/* end contact sec */
 
 
 
