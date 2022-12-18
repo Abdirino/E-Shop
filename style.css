@@ -108,10 +108,154 @@ header .bx-menu{
 /* end nav sec */
 
 /* home sec */
+/* .home::before,
+.home::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}*/
 .home{
-    padding: 70px 0;
+    padding: 110px 0 50px 0;
+    box-sizing: border-box;
+    font-size: 65%;
+    /* background: #430a14; */
 }
-  
+.container{
+    position: relative;
+    overflow: hidden;
+}
+.slider{
+    display: flex;
+    width: 500%;
+    height: 60vh;
+    transition: all .25s ease-in;
+}
+.slider .box{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.slider .box .bg{
+    padding: 2rem;
+    background-color: #430a14bd;
+    width: 45%;
+    transform: skewX(12deg);
+    position: absolute;
+    height: 100%;
+    left: -14%;
+    padding-left: 20rem;
+    transform-origin: 0 100%;
+}
+.slider .box .bg::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0; top: 0;
+    background-color: inherit;
+    pointer-events: none;
+    transform: skewX(15deg);
+}
+.slider .box .details{
+    position: relative;
+    top: -130px;
+    padding-left: 3.5rem;
+    width: 500px;
+    z-index: 100;
+}
+.slider .box .details h1{
+    font-family: caghen;
+    font-size: 30px;
+    padding: 10px;
+    color: #cab2ae;
+}
+.slider .box .details h3{
+    font-family: ramus;
+    font-size: 20px;
+    padding: 7px;
+    color: #cab2ae;
+}
+.slider .box .details .buy{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.slider .box .details .buy p{
+    font-family: ramus;
+    font-size: 27px;
+    padding: 12px;
+    color: #cab2ae;
+    border-bottom: 2px solid #cab2ae;
+    border-top: 2px solid #cab2ae;
+}
+.slider .box .details .buy a{
+    font-family: ramus;
+    font-size: 20px;
+    padding: 18px;
+    background: #cab2ae;
+    border-radius: 8px;
+    color: #242635;
+}
+.slider .box .details a:hover{
+    box-shadow: 8px 10px 4px #c21531;
+}
+.slider .box .details a:active{
+    box-shadow: 4px 7px 4px #c21531;
+}
+.slider .box .img{
+    width: 500px;
+    height: 600px;
+    position: relative;
+    right: 300px;
+    bottom: 140px;
+}
+.slider .box .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.next{
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+}
+@media (max-width: 900px){
+    .slider .box .bg{
+        width: 65%;
+    }
+    .home{
+        font-size: 55%;
+    }
+    .container{
+        border-radius: 0;
+    }
+    .slider{
+        height: 100vh;
+    }
+}
+@media (max-width: 650px){
+    .slider .box{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .slider .box .bg{
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        height: 54%;
+        transform: skewX(0deg);
+    }
+    .slider .box .bg::before{
+        width: 120%;
+        bottom: 0;
+        transform: skewX(0deg);
+    }
+}
 /* end home sec */
 
 /* product sec */
@@ -156,7 +300,7 @@ header .bx-menu{
     transition: 1s ease;
 }
 .product:hover{
-    transform: scale(1.07);
+    transform: scale(1.04);
     box-shadow: 9px 18px 32px rgba(0, 0, 0, 0.775);
 }
 .product img{
@@ -295,13 +439,13 @@ header .bx-menu{
 }
 .latest .items .prod .details .buy p{
     font-weight: lighter;
-    padding: 0 15px;
+    padding: 10px;
     border-top: 2px solid white;
     border-bottom: 2px solid white;
     margin-right: 20px;
 }
 .latest .items .prod .details .buy a{
-    padding: 15px;
+    padding: 10px;
     margin-left: 20px;
     background: #c21531;
     text-align: center;
@@ -315,59 +459,99 @@ header .bx-menu{
 }
 /* end product sec */
 /* offers sec */
-.offers{
-    padding: 60px 0;
+.elaboration{
+    padding: 70px 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    flex-direction: row;
+    background: #242635;
 }
-.offers .description{
-    margin: auto;
-    text-align: center;
-    /* width: 700px; */
+.elaboration .ceo{
+    background: #cab2ae;
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #242635;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.799);
+    border-radius: 10px;
+    margin: 15px;
 }
-.offers .description h1{
-    font-size: 45px;
+.elaboration .ceo img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.elaboration .ceo h2{
     font-family: caghen;
-    padding: 12px;
-    border-bottom: 2px solid #0f4676;
-}
-.offers .description h1 span{
-    color: #00BDC9;
-}
-.offers .description p{
     font-size: 22px;
+    font-weight: bolder;
+    padding: 10px;
+}
+.elaboration .ceo h3{
     font-family: ramus;
-    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: bold;
     padding: 7px;
 }
-.offers .off{
-    display: flex;
-    flex-direction: row;
-    /* flex-wrap: wrap; */
-}
-.offers .off .offer{
-    flex: 1 1 400px;
-    border: 2px solid  #0f4676;
-    /* height: 200px; */
-    width: 280px;
-    margin: 10px;
-    padding: 12px;
-    text-align: center;
-}
-.offers .off .offer i{
-    font-size: 30px;
-    color: #0f4676;
-    padding: 4px;
-}
-.offers .off .offer p{
-    font-size: 22px;
-    color: #0f4676;
-    padding: 4px;
+.elaboration .ceo p{
     font-family: ramus;
+    font-size: 15px;
+    font-weight: lighter;
+    padding: 10px;
+}
+.elaboration .offer{
+    flex-basis: 60%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.714);
+    border-radius: 10px;
+    margin: 15px;
+    background-image: url(images/technology-gadgets-card-game-100-cool-tech-in-2019-best-products-you-need.webp);
+    background-size: contain;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.elaboration .offer .off{
+    padding: 20px 35px;
+    background: #242635;
+    border-radius: 10px;
+}
+.elaboration .offer .off h4{
     padding: 5px;
-    letter-spacing: .6px;
+    background-color: rgba(255, 255, 255, 0.619);
+    border-radius: 10px;
+    font-family: ramus;
+    box-sizing: 0 0 4px rgba(255, 255, 255, 0.806);
+}
+.elaboration .offer .off h1{
+    font-size: 26px;
+    font-family: caghen;
+    color: #cab2ae;
+    padding: 15px 0 7px 0;
+}
+.elaboration .offer .off p{
+    font-family: ramus;
+    font-weight: lighter;
+    padding: 8px;
+    color: #cab2ae;
+}
+.elaboration .offer .off h3{
+    font-family: ramus;
+    color: #cab2ae;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.elaboration .offer .off h3:hover{
+    color: #c21531;
+}
+.elaboration .del{
+    flex-basis: 20%;
+    border: 2px solid green;
+    margin: 15px;
 }
 /* end offers sec */
 /* contact sec */
@@ -438,6 +622,9 @@ header .bx-menu{
 
 
 @media (max-width: 860px){
+    .elaboration{
+        flex-wrap: wrap;
+    }
     .contact h1{
         font-size: 35px;
         margin: auto;
