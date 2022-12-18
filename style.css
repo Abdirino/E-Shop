@@ -53,7 +53,7 @@ header .logo{
     padding: 8px 0 8px 5px;
 }
 header .logo span{
-    color: #cab2ae;
+    color: #c21531;
 }
 header .navbar a{
     color: white;
@@ -62,7 +62,7 @@ header .navbar a{
     padding: 20px 7px;
 }
 header .navbar a:hover{
-    color: #00BDC9;
+    color: #c21531;
 }
 header .icon a i{
     font-size: 40px;
@@ -109,74 +109,8 @@ header .bx-menu{
 
 /* home sec */
 .home{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: 70vh;
-    -webkit-animation: color-change-2x 2s linear infinite alternate both;
-	        animation: color-change-2x 2s linear infinite alternate both;
+    padding: 70px 0;
 }
-.home .content{
-    margin: 20px 0 0 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-/* .hidden{
-    opacity: 1;
-    filter: blur(4px);
-    transform: translateY(-100px);
-    transition: all 1s;
-}
-.show{
-    opacity: 1;
-    filter: blur(0);
-    transform: translateY(0);
-} */
-.home .content h1{
-    padding: 20px;
-    font-family: caghen;
-    font-size: 60px;
-    margin-top: 20px;
-}
-.home .content button{
-    padding: 15px 20px;
-    font-family: ramus;
-    font-size: 20px;
-    margin: 10px;
-    border-radius: 12px;
-    background: rgb(0, 23, 82);
-    border: none;
-    color: white;
-}
-.home .content button:hover{
-    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.69);
-}
-.home .content button:active{
-    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.69);
-}
-
-
-
- @-webkit-keyframes color-change-2x {
-    0% {
-      background: #19dcea;
-    }
-    100% {
-      background: #0f4676;
-    }
-  }
-  @keyframes color-change-2x {
-    0% {
-      background: #19dcea;
-    }
-    100% {
-      background: #0f4676;
-    }
-  }
   
 /* end home sec */
 
@@ -189,7 +123,9 @@ header .bx-menu{
     flex-direction: column;
 }
 .trending{
-    padding: 60px 0;
+    width: 100%;
+    background: #cab2ae;
+    padding: 70px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -198,9 +134,9 @@ header .bx-menu{
 .trending h1{
     font-family: caghen;
     font-size: 40px;
-    border-bottom: 3px solid #0f4676;
-    width: fit-content;
-    padding: 16px;
+    color: #c21531;
+    background: #242635;
+    padding: 16px 150px;
 }
 .wrapper .carousel{
     display: flex;
@@ -210,19 +146,24 @@ header .bx-menu{
     padding: 40px 10px;
 }
 .product{
-    flex: 1 1 300px;
+    flex: 1 1 250px;
     /* display: flex; */
-    background: #0f4676;
+    background: #ffffff;
     box-shadow: 9px 18px 32px rgba(0, 0, 0, 0.686);
     flex-direction: column;
-    height: 400px;
+    height: 300px;
     text-align: center;
-    border-radius: 3px;
+    transition: 1s ease;
+}
+.product:hover{
+    transform: scale(1.07);
+    box-shadow: 9px 18px 32px rgba(0, 0, 0, 0.775);
 }
 .product img{
     width: 100%;
     height: 60%;
-    object-fit: cover;
+    object-fit: contain;
+    cursor: pointer;
 }
 .product .des h2{
     font-family: caghen;
@@ -237,18 +178,19 @@ header .bx-menu{
 .product .des button{
     font-size: 15px;
     font-weight: bold;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 12px;
+    padding: 10px 35px;
     margin: 15px;
     font-family: ramus;
     cursor: pointer;
+    transform: 1s ease;
 }
 .product .des button:hover{
-    background: #00BDC9;
-    color: white;
+    box-shadow: 12px 8px 4px #c21531;
+    background: #242635;
+    color: #cab2ae;
 }
 .latest{
+    padding: 70px 0;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -278,9 +220,9 @@ header .bx-menu{
 .latest h1{
     font-family: caghen;
     font-size: 40px;
-    border-bottom: 3px solid #0f4676;
-    width: fit-content;
-    padding: 30px;
+    color: #c21531;
+    background: #242635;
+    padding: 16px 150px;
 }
 
 .latest .items{
@@ -298,6 +240,7 @@ header .bx-menu{
     flex: 1 1 300px;
     padding: 10px;
     margin: 15px;
+    box-shadow: 7px 14px 28px rgba(0, 0, 0, 0.701);
     background: #242635;
     border-radius: 20px;
     height: 410px;
@@ -306,7 +249,7 @@ header .bx-menu{
     flex-direction: column;
 }
 .latest .items .prod .image{
-    height: 190px;
+    height: 220px;
     background: white;
     /* width: 500px; */
     border-radius: 20px;
@@ -347,12 +290,14 @@ header .bx-menu{
 .latest .items .prod .details .buy{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     padding: 8px;
 }
 .latest .items .prod .details .buy p{
     font-weight: lighter;
-    /* padding: 10px 0 0 0; */
+    padding: 0 15px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
     margin-right: 20px;
 }
 .latest .items .prod .details .buy a{
@@ -368,64 +313,6 @@ header .bx-menu{
     background: #430a14;
     color: white;
 }
-/*.latest .items .item{
-    background: #fff;
-    row-gap: 1rem;
-    border-radius: 4px;
-    flex: 1 1 300px;
-    height: 300px;
-    margin: 10px;
-    box-shadow: 7px 14px 28px rgba(0, 0, 0, 0.747);
-}
-.items .item img{
-    width: 100%;
-    height: 75%;
-    object-fit: contain;
-}
-.items .item .details h2{
-    width: fit-content;
-    font-size: 20px;
-    font-family: caghen;
-    color: #000000;
-    padding: 4px;
-    margin: 12px 0 10px 10px;
-    letter-spacing: 1.5px;
-}
-.items .item .details p{
-    font-size: 18px;
-    font-family: ramus;
-    padding: 6px;
-    letter-spacing: 1px;
-    color: rgb(0, 0, 0);
-    margin: 10px;
-    width: fit-content;
-}
-.items .item .details span{
-    font-size: 16px;
-    font-family: ramus;
-    padding: 6px;
-    letter-spacing: 1px;
-    color: rgb(45, 44, 44);
-    margin: 10px;
-    width: fit-content;
-    display: block;
-    text-decoration: line-through;
-}
-.items .item .details a{
-    float: right;
-    margin: -45px 6px 0 0;
-    padding: 18px 40px;
-    border-radius: 15px;
-    background: #00BDC9;
-    color: black;
-    font-size: 16px;
-    font-family: ramus;
-    letter-spacing: 1px;
-}
-.items .item .details a:hover{
-    color: white;
-    background: #0f4676;
-} */
 /* end product sec */
 /* offers sec */
 .offers{
