@@ -224,6 +224,30 @@ header .bx-menu{
     right: 2%;
     transform: translateY(-50%);
 }
+.trail{
+    bottom: 5%; left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.trail div{
+    padding: 2rem;
+    border-top: 3px solid white;
+    cursor: pointer;
+    opacity: 0.3;
+    transition: all .3s ease;
+}
+.trail div:hover{
+    opacity: 0.6;
+}
+.active{
+    opacity: 1 !important;
+}
+
 @media (max-width: 900px){
     .slider .box .bg{
         width: 65%;
@@ -239,6 +263,13 @@ header .bx-menu{
     }
 }
 @media (max-width: 650px){
+    .trail{
+        width: 90%;
+        bottom: 13%;
+    }
+    .trail div{
+        padding: 1rem;
+    }
     .slider .box{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
@@ -413,21 +444,21 @@ header .bx-menu{
 .latest .items .prod .details h2{
     color: white;
     font-family: caghen;
-    padding: 20px 0 5px 0;
+    padding: 17px 0 5px 0;
 }
 .latest .items .prod .details .stars{
     display: flex;
     flex-direction: row;
-    padding: 15px 0 8px 0;
+    padding: 12px 0 6px 0;
 }
 .latest .items .prod .details i{
     font-size: 14px;
     color: #f79f1a;
-    padding: 5px;
+    padding: 4px;
 }
 .latest .items .prod .details p{
     color: white;
-    line-height: 18px;
+    line-height: 14px;
     font-family: ramus;
     padding: 6px;
 }
@@ -508,7 +539,8 @@ header .bx-menu{
     border-radius: 10px;
     margin: 15px;
     background-image: url(images/technology-gadgets-card-game-100-cool-tech-in-2019-best-products-you-need.webp);
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
     display: flex;
     justify-content: center;
@@ -556,61 +588,15 @@ header .bx-menu{
 /* end offers sec */
 /* contact sec */
 .contact{
-    background: #134982;
-    /* height: 100vh; */
-    padding: 70px 0 0 0;
+    background: #c21531;
+    width: 100%;
+    padding: 30px 0;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
-    flex-direction: column;
-}
-.contact h1{
-    font-family: caghen;
-    font-size: 50px;
-    color: #00BDC9;
-    padding: 4px;
-}
-.contact h3{
-    font-family: ramus;
-    font-size: 30px;
-    color: #00BDC9;
-    padding: 7px;
-    border-bottom: 2px solid #ffffff;
-}
-.contact .info{
-    display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
-.contact .info .icons{
-    padding: 15px;
-}
-.contact .info .icons i{
-    margin: 10px 0;
-    padding: 10px;
-    font-size: 40px;
-    color: #00BDC9;
-    cursor: pointer;
-    transition: .6s ease;
-}
-.contact .info .icons i:hover{
-    transform: scale(1.2);
-}
-.contact .info .location{
-    padding: 0 20px;
-}
-.contact .info .location h2{
-    font-size: 35px;
-    font-family: caghen;
-    color: #4ceffb;
-}
-.contact .info .location p{
-    font-size: 25px;
-    color: #76ebf4;
-    font-family: ramus;
-    padding: 4px 30px;
-    margin: auto;
-}
+
 /* end contact sec */
 
 
