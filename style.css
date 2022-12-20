@@ -49,7 +49,7 @@ header{
 header .logo{
     color: white;
     font-family: caghen;
-    font-size: 35px;
+    font-size: 38px;
     padding: 8px 0 8px 5px;
 }
 header .logo span{
@@ -92,10 +92,109 @@ header .bx-menu{
 /* end nav sec */
 
 /* home sec */
-.home{
+/* .home{
+    padding: 70px 0;
+    width: 100%;
     height: 100vh;
+    background: #f79f1a;
+} */
+.home .container{
+    padding: 70px 0;
+    width: 100%;
+    /* height: 100vh; */
+    background: #f79f1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
+.home .container .box{
+    width: 1055px;
+    height: 380px;
+    margin-bottom: -38px;
+    background-color: #cab2ae;
+    border-radius: 10px;
+    box-shadow: 8px 10px 6px rgba(0, 0, 0, 0.591);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 10px;
+}
+.home .container .box .img{
+    flex: 1 1 450px;
+    height: 360px;
+    width: 440px;
+    padding: 10px;
+    margin: 10px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.home .container .box .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.home .container .box .details{
+    flex: 1 1 500px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.home .container .box .details h1{
+    font-family: caghen;
+    padding: 10px 0;
+}
+.home .container .box .details h3{
+    font-family: ramus;
+    padding: 10px 0;
+}
+.home .container .box .details .stars{
+    display: flex;
+    flex-direction: row;
+    padding: 12px 0 6px 0;
+}
+.home .container .box .details .stars i{
+    font-size: 18px;
+    color: #f79f1a;
+    padding: 6px;
+}
+.home .container .box .details .buy{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+}
+.home .container .box .details .buy p{
+    font-weight: bold;
+    font-family: ramus;
+    font-size: 20px;
+    padding: 10px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    margin-right: 100px;
+}
+.home .container .box .details .buy a{
+    padding: 10px 45px;
+    margin-left: 20px;
+    background: #c21531;
+    text-align: center;
+    font-family: ramus;
+    color: black;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.home .container .box .details .buy a:hover{
+    box-shadow: 12px 8px 4px #c21531;
+    background: #242635;
+    color: #cab2ae;
+}
+.home .container .box .details .buy a:active{
+    box-shadow: 8px 4px 4px #c21531;
+    background: #cab2ae;
+    color: #242635;
+}
 /* end home sec */
 
 /* product sec */
@@ -120,7 +219,7 @@ header .bx-menu{
     font-size: 40px;
     color: #c21531;
     background: #242635;
-    padding: 16px 150px;
+    padding: 12px 60px;
 }
 .wrapper .carousel{
     display: flex;
@@ -409,6 +508,12 @@ header .bx-menu{
 
 
 @media (max-width: 860px){
+    .home .container .box{
+        flex-wrap: wrap;
+    }
+    .trending h1{
+        font-size: 25px;
+    }
     .elaboration{
         flex-wrap: wrap;
     }

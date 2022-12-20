@@ -5,9 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.2.js"></script>
+    <!-- light-slider css -->
+    <link rel="stylesheet" href="./lightslider.css">
+    <!-- light-slider js -->
+    <script src="./lightslider.js"></script>
+
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Edge Mart E-commerce Site</title>
 </head>
@@ -38,42 +45,140 @@
 
     <!-- home sec -->
     <div class="home" id="home">
-        
-                <!-- <div class="box1 box">
-                    <div class="bg"></div>
-                    <div class="details">
-                        <h1>Sony WH-1000XM5 Headphones</h1>
-                        <h3>
-                            From airplane noise to people's voices, our WH-1000XM5 wireless headphones with
-                            multiple microphone noise cancelling keep out more high and mid frequency .
-                        </h3>
-                        <div class="buy">
-                            <p>$499</p>
-                            <a href="#">Add to Cart</a>
+        <div class="container">
+            <ul id="autoWidth" class="cs-hidden">
+                <li class="item-a">
+                    <div class="box">
+                        <div class="img">
+                            <img src="images/Sony-WH-1000XM5-Headphones-at-GrandHub.webp" alt="">
+                        </div>
+                        <div class="details">
+                            <h1>Sony WH-1000XM5 Headphones</h1>
+                            <div class="stars">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <h3>
+                                From airplane noise to people's voices, our WH-1000XM5 wireless headphones with
+                                multiple microphone noise cancelling keep out more high and mid frequency .
+                            </h3>
+                            <div class="buy">
+                                <p>$499</p>
+                                <a href="#">Add to Cart</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="img">
-                        <img src="images/Sony-WH-1000XM5-Headphones-at-GrandHub.webp" alt="">
+                </li>
+                <li class="item-b">
+                    <div class="box">
+                        <div class="img">
+                            <img src="images/Nintendo_Switch7069.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <h1>Nintendo Switch Oled</h1>
+                            <div class="stars">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <h3>
+                                The new system features a vibrant 7-inch O LED screen, a wide adjustable stand
+                                , a dock with a wired LAN port, 64 GB of internal storage, and enhanced audio.
+                            </h3>
+                            <div class="buy">
+                                <p>$699</p>
+                                <a href="#">Add to Cart</a>
+                            </div>
+                        </div>
                     </div>
+                </li>
+                <li class="item-c">
+                    <div class="box">
+                        <div class="img">
+                            <img src="images/Sony-WH-1000XM5-Headphones-at-GrandHub.webp" alt="">
+                        </div>
+                        <div class="details">
+                            <h1>Sony WH-1000XM5 Headphones</h1>
+                            <div class="stars">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <h3>
+                                From airplane noise to people's voices, our WH-1000XM5 wireless headphones with
+                                multiple microphone noise cancelling keep out more high and mid frequency .
+                            </h3>
+                            <div class="buy">
+                                <p>$499</p>
+                                <a href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-d">
+                    <div class="box">
+                        <div class="img">
+                            <img src="images/Sony-WH-1000XM5-Headphones-at-GrandHub.webp" alt="">
+                        </div>
+                        <div class="details">
+                            <h1>Sony WH-1000XM5 Headphones</h1>
+                            <div class="stars">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <h3>
+                                From airplane noise to people's voices, our WH-1000XM5 wireless headphones with
+                                multiple microphone noise cancelling keep out more high and mid frequency .
+                            </h3>
+                            <div class="buy">
+                                <p>$499</p>
+                                <a href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-e">
+                    <div class="box">
+                        <div class="img">
+                            <img src="images/Sony-WH-1000XM5-Headphones-at-GrandHub.webp" alt="">
+                        </div>
+                        <div class="details">
+                            <h1>Sony WH-1000XM5 Headphones</h1>
+                            <div class="stars">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                            </div>
+                            <h3>
+                                From airplane noise to people's voices, our WH-1000XM5 wireless headphones with
+                                multiple microphone noise cancelling keep out more high and mid frequency .
+                            </h3>
+                            <div class="buy">
+                                <p>$499</p>
+                                <a href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        <!-- <div class="box1 box">
+                    
                 </div>
 
-                <div class="box2 box">
-                    <div class="bg"></div>
-                    <div class="details">
-                        <h1>Nintendo Switch Oled</h1>
-                        <h3>
-                            The new system features a vibrant 7-inch O LED screen, a wide adjustable stand
-                            , a dock with a wired LAN port, 64 GB of internal storage, and enhanced audio.
-                        </h3>
-                        <div class="buy">
-                            <p>$699</p>
-                            <a href="#">Add to Cart</a>
-                        </div>
-                    </div>
-                    <div class="img">
-                        <img src="images/Nintendo_Switch7069.jpg" alt="">
-                    </div>
-                </div>
 
                 <div class="box3 box">
                     <div class="bg"></div>
@@ -270,62 +375,64 @@
             </div>
         </div>
     </div>
-        <!-- end products sec -->
+    <!-- end products sec -->
 
-        <!-- offer sec -->
-        <div class="elaboration" id="elaboration">
-            <div class="ceo">
-                <img src="images/VRG_ILLO_Decoder_Herbert_Diess_s.jpg.crdownload" alt="">
-                <h2>Abdirino Ahash</h2>
-                <h3>CEO & Founder Invision</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit esse, animi dignissimos aspernatur
-                    fuga distinctio non, nisi illo doloribus rerum expedita.</p>
-            </div>
+    <!-- offer sec -->
+    <div class="elaboration" id="elaboration">
+        <div class="ceo">
+            <img src="images/VRG_ILLO_Decoder_Herbert_Diess_s.jpg.crdownload" alt="">
+            <h2>Abdirino Ahash</h2>
+            <h3>CEO & Founder Invision</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit esse, animi dignissimos aspernatur
+                fuga distinctio non, nisi illo doloribus rerum expedita.</p>
+        </div>
 
-            <div class="offer">
-                <div class="off">
-                    <h4>25% Discount</h4>
-                    <h1>Summer Collection</h1>
-                    <p>Starting at $50</p>
-                    <h3>SHOP NOW</h3>
-                </div>
-            </div>
-
-            <div class="del">
+        <div class="offer">
+            <div class="off">
                 <h4>25% Discount</h4>
                 <h1>Summer Collection</h1>
                 <p>Starting at $50</p>
                 <h3>SHOP NOW</h3>
             </div>
-        </div> 
-        <!-- end offer sec -->
-        <!-- contact sec -->
-        <div class="contact" id="contact">
-            <div class="logo">
-                <h1>Edge <span>Mart</span>.</h1>
-                <p>Get Quality for a whole lot less.</p>
-            </div>
-            <div class="location">
-                <h2>Our Various Locations</h2>
-                <p>London</p>
-                <p>New York</p>
-                <p>Moscow</p>
-                <p>Paris</p>
-            </div>
-            <div class="socials">
-                <h2>social Media</h2>
-                <p>Instagram</p>
-                <p>Facebook</p>
-                <p>Twitter</p>
-                <p>Whatsapp</p>
-            </div>
         </div>
-        <!-- end contact sec -->
 
-        <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <div class="del">
+            <h4>25% Discount</h4>
+            <h1>Summer Collection</h1>
+            <p>Starting at $50</p>
+            <h3>SHOP NOW</h3>
+        </div>
+    </div>
+    <!-- end offer sec -->
+    <!-- contact sec -->
+    <div class="contact" id="contact">
+        <div class="logo">
+            <h1>Edge <span>Mart</span>.</h1>
+            <p>Get Quality for a whole lot less.</p>
+        </div>
+        <div class="location">
+            <h2>Our Various Locations</h2>
+            <p>London</p>
+            <p>New York</p>
+            <p>Moscow</p>
+            <p>Paris</p>
+        </div>
+        <div class="socials">
+            <h2>social Media</h2>
+            <p>Instagram</p>
+            <p>Facebook</p>
+            <p>Twitter</p>
+            <p>Whatsapp</p>
+        </div>
+    </div>
+    <!-- end contact sec -->
+
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></scrip>
         <script>
         AOS.init();
     </script> -->
+
+    <script src="index.js"></script>
 </body>
 
 <script defer>
