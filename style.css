@@ -219,7 +219,7 @@ header .bx-menu{
     font-size: 40px;
     color: #c21531;
     background: #242635;
-    padding: 12px 60px;
+    padding: 6px 60px;
 }
 .wrapper .carousel{
     display: flex;
@@ -509,7 +509,15 @@ header .bx-menu{
 
 @media (max-width: 860px){
     .home .container .box{
-        flex-wrap: wrap;
+        width: 400px;
+        flex-direction: column;
+    }
+    .home .container .box .img{
+        width: 390px;
+        height: 340px;
+    }
+    .home .container .box .details h3{
+        display: none;
     }
     .trending h1{
         font-size: 25px;
