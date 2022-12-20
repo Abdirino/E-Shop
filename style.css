@@ -395,7 +395,7 @@ header .bx-menu{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    background: #242635;
+    /* background: #242635; */
 }
 .elaboration .ceo{
     background: #cab2ae;
@@ -487,14 +487,77 @@ header .bx-menu{
 }
 /* end offers sec */
 /* contact sec */
-.contact{
-    background: #c21531;
-    width: 100%;
-    padding: 30px 0;
+.container{
+    max-width: 90%;
+    margin: auto;
+}
+.row{
     display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer{
+    background: #242635;
+    padding: 50px 0;
+    width: 100%;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 20px;
+}
+.footer-col h4{
+    font-size: 20px;
+    font-family: caghen;
+    color: #cab2ae;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    position: relative;
+}
+.footer-col h4::before{
+    content: "";
+    position: absolute;
+    left: 0; bottom: -10px;
+    background-color: #c21531;
+    height: 3px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 17px;
+    text-transform: capitalize;
+    color: white;
+    font-weight: lighter;
+    font-family: ramus;
+    display: block;
+    transition: all 0.4s ease;
+}
+.footer-col ul li a:hover{
+    padding-left: 8px;
+}
+.footer-col .social-links i{
+    display: inline-block;
+    font-size: 25px;
+    color: #c21531;
+    padding: 0 7px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.footer-col .social-links i:hover{
+    transform: scale(1.2);
+}
+
+@media(max-width: 767px){
+    .footer-col{
+        width: 40%;
+        margin: 30px;
+    }
+}
+@media(max-width: 574px){
+    .footer-col{
+        width: 100%;
+    }
 }
 
 /* end contact sec */
