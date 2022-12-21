@@ -92,12 +92,10 @@ header .bx-menu{
 /* end nav sec */
 
 /* home sec */
-/* .home{
-    padding: 70px 0;
+.home{
     width: 100%;
-    height: 100vh;
     background: #f79f1a;
-} */
+}
 .home .container{
     padding: 70px 0;
     width: 100%;
@@ -108,13 +106,13 @@ header .bx-menu{
     align-items: center;
 }
 .home .container .box{
-    width: 1055px;
+    width: 900px;
     height: 380px;
     margin-bottom: -38px;
     background-color: #cab2ae;
     border-radius: 10px;
     box-shadow: 8px 10px 6px rgba(0, 0, 0, 0.591);
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
     flex-direction: row;
     margin: 20px 10px;
@@ -122,7 +120,7 @@ header .bx-menu{
 .home .container .box .img{
     flex: 1 1 450px;
     height: 360px;
-    width: 440px;
+    width: 400px;
     padding: 10px;
     margin: 10px;
     background: white;
@@ -192,8 +190,6 @@ header .bx-menu{
 }
 .home .container .box .details .buy a:active{
     box-shadow: 8px 4px 4px #c21531;
-    background: #cab2ae;
-    color: #242635;
 }
 /* end home sec */
 
@@ -278,6 +274,7 @@ header .bx-menu{
     color: #cab2ae;
 }
 .latest{
+    width: 100%;
     padding: 70px 0;
     text-align: center;
     display: flex;
@@ -379,7 +376,7 @@ header .bx-menu{
     border-radius: 5px;
 }
 .latest .items .prod .details .buy a:hover{
-    box-shadow: 12px 8px 4px #c21531;
+    box-shadow: 10px 7px 4px #c21531;
     background: #cab2ae;
     color: #242635;
 }
@@ -570,17 +567,33 @@ header .bx-menu{
 
 
 
-@media (max-width: 860px){
+@media (max-width: 1000px){
     .home .container .box{
-        width: 400px;
+        width: 320px;
         flex-direction: column;
     }
     .home .container .box .img{
-        width: 390px;
-        height: 340px;
+        width: 95%;
+        height: 350px;
+    }
+    .home .container .box .details h1{
+        font-family: caghen;
+        padding: 7px 0;
+        font-size: 25px;
     }
     .home .container .box .details h3{
         display: none;
+    }
+    .home .container .box .details .buy{
+        padding: 10px;
+    }
+    .home .container .box .details .buy p{
+        padding: 6px;
+        font-size: 16px;
+    }
+    .home .container .box .details .buy a{
+        padding: 6px;
+        font-size: 16px;
     }
     .trending h1{
         font-size: 25px;

@@ -36,7 +36,6 @@
     -ms-transform: translate(0px, 0px);
     transform: translate(0px, 0px);
     -webkit-transition: all 1s;
-    transition: all 1s;
     -webkit-transition-property: -webkit-transform,height;
     -moz-transition-property: -moz-transform,height;
     transition-property: transform,height;
@@ -88,12 +87,12 @@
 }
 .lSSlideOuter .lSPager.lSpg > li a {
     background-color: #222222;
-    border-radius: 50px;
+    border-radius: 8px;
     display: inline-block;
-    height: 15px;
+    height: 10px;
     overflow: hidden;
     text-indent: -999em;
-    width: 60px;
+    width: 45px;
     position: relative;
     z-index: 99;
     -webkit-transition: all 0.5s linear 0s;
@@ -122,7 +121,6 @@
     -webkit-transform: translate3d(0px, 0px, 0px);
     -o-transform: translate3d(0px, 0px, 0px);
     -webkit-transition-property: -webkit-transform;
-    transition-property: -webkit-transform;
     -moz-transition-property: -moz-transform;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
