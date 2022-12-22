@@ -57,9 +57,9 @@ header .logo span{
 }
 header .navbar a{
     color: white;
-    font-size: 25px;
+    font-size: 15px;
     font-family: ramus;
-    padding: 20px 7px;
+    padding: 8px 7px;
 }
 header .navbar a:hover{
     color: #c21531;
@@ -81,7 +81,7 @@ label{
 }
 header .bx-menu{
     font-size: 40px;
-    color: whitesmoke;
+    color: #cab2ae;
     border-radius: .5rem;
     padding: .5rem 1rem;
     margin: 5px;
@@ -387,51 +387,17 @@ header .bx-menu{
 }
 /* end product sec */
 /* offers sec */
-.elaboration{
-    padding: 70px 0;
+.offers{
+    padding: 50px 0;
     display: flex;
     justify-content: center;
     flex-direction: row;
+    background: #c21531;
     /* background: #242635; */
 }
-.elaboration .ceo{
-    background: #cab2ae;
-    flex-basis: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.offers .offer{
+    flex: 1 1 400px;
     border: 2px solid #242635;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.799);
-    border-radius: 10px;
-    margin: 15px;
-}
-.elaboration .ceo img{
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    margin: 10px;
-}
-.elaboration .ceo h2{
-    font-family: caghen;
-    font-size: 22px;
-    font-weight: bolder;
-    padding: 10px;
-}
-.elaboration .ceo h3{
-    font-family: ramus;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 7px;
-}
-.elaboration .ceo p{
-    font-family: ramus;
-    font-size: 15px;
-    font-weight: lighter;
-    padding: 10px;
-}
-.elaboration .offer{
-    flex-basis: 60%;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.714);
     border-radius: 10px;
     margin: 15px;
@@ -443,44 +409,75 @@ header .bx-menu{
     justify-content: center;
     align-items: center;
 }
-.elaboration .offer .off{
+.offers .offer .off{
+    text-align: center;
     padding: 20px 35px;
+    margin: 50px 0;
     background: #242635;
     border-radius: 10px;
 }
-.elaboration .offer .off h4{
+.offers .offer .off h4{
     padding: 5px;
     background-color: rgba(255, 255, 255, 0.619);
     border-radius: 10px;
     font-family: ramus;
     box-sizing: 0 0 4px rgba(255, 255, 255, 0.806);
 }
-.elaboration .offer .off h1{
+.offers .offer .off h1{
     font-size: 26px;
     font-family: caghen;
     color: #cab2ae;
     padding: 15px 0 7px 0;
 }
-.elaboration .offer .off p{
+.offers .offer .off p{
     font-family: ramus;
     font-weight: lighter;
     padding: 8px;
     color: #cab2ae;
 }
-.elaboration .offer .off h3{
+.offers .offer .off h3{
     font-family: ramus;
     color: #cab2ae;
     font-size: 22px;
     font-weight: bold;
     cursor: pointer;
 }
-.elaboration .offer .off h3:hover{
+.offers .offer .off h3:hover{
     color: #c21531;
 }
-.elaboration .del{
-    flex-basis: 20%;
-    border: 2px solid green;
+.offers .del{
+    flex: 1 1 100px;
+    border: 2px solid #c21531;
+    background: #242635;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.65);
     margin: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.offers .del .row1{
+    display: flex;
+    flex-direction: row;
+    padding: 7px;
+}
+.offers .del .row1 i{
+    font-size: 50px;
+    padding: 0 10px;
+    color: #c21531;
+}
+.offers .del .row1 .col{
+    display: flex;
+    flex-direction: column;
+}
+.offers .del .row1 .col h2{
+    color: #cab2ae;
+    font-family: caghen;
+}
+.offers .del .row1 .col p{
+    color: #cab2ae;
+    font-family: ramus;
 }
 /* end offers sec */
 /* contact sec */
@@ -598,7 +595,7 @@ header .bx-menu{
     .trending h1{
         font-size: 25px;
     }
-    .elaboration{
+    .offers{
         flex-wrap: wrap;
     }
     .contact h1{
@@ -641,7 +638,7 @@ header .bx-menu{
     header .navbar{
         position: absolute;
         top: 100%; left: 0; right: 0;
-        background: #eee;
+        background: #cab2ae;
         border-top: .1rem solid rgba(0, 0, 0, 0.1);
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         transition: .5s ease;
@@ -652,10 +649,11 @@ header .bx-menu{
     header .navbar a{
         margin: 10px;
         padding: 5px;
-        background: #fff;
+        background: #242635;
+        font-size: 20px;
         border: 1rem solid rgba(0, 0, 0, 0.108);
         display: block;
-        color: black;
+        color: #c21531;
     }
     header .logo{
         font-size: 45px;
