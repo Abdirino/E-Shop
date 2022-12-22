@@ -1,23 +1,223 @@
-*{
-    margin: 0; padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    outline: none;
+@font-face {
+  font-family: ramus;
+  src: url(ramus-font/RamusMedium-ALX07.ttf);
 }
-.cart{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 2rem;
-    gap: 2rem;
+@font-face {
+  font-family: caghen;
+  src: url(caghen-serif-font-1669857632-0/caghen-demo.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+}
+/* nav sec */
+header {
+  width: 100%;
+  /* height: 70px; */
+  background: #242635;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.64);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5000;
+}
+header .logo {
+  color: white;
+  font-family: caghen;
+  font-size: 38px;
+  padding: 8px 0 8px 5px;
+}
+header .logo span {
+  color: #c21531;
+}
+header .navbar a {
+  color: white;
+  font-size: 15px;
+  font-family: ramus;
+  padding: 8px 7px;
+}
+header .navbar a:hover {
+  color: #c21531;
+}
+header .icon {
+  display: flex;
+  flex-direction: row;
+}
+header .icon a i {
+  font-size: 30px;
+  padding: 6px;
+  font-family: caghen;
+  color: #cab2ae;
+}
+header .icon .cart {
+  display: flex;
+  justify-content: space-a ;
+  align-items: center;
+  padding: 0 5px;
+  margin: 0 5px 0 0;
+  border-radius: 10px;
+  border: 3px solid #c21531;
+  flex-direction: row;
+}
+header .icon .cart p {
+  font-size: 20px;
+  font-family: caghen;
+  color: #cab2ae;
+}
+header .icon a i:hover {
+  color: #c21531;
+}
+header #toggler {
+  display: none;
+}
+label {
+  display: none;
+}
+header .bx-menu {
+  font-size: 40px;
+  color: #cab2ae;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin: 5px;
+  cursor: pointer;
+  /* border: 1px solid rgba(0, 0, 0, 0.303); */
+  display: none;
+}
+/* end nav sec */
+.cart {
+  padding: 70px 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+.cart .cart-title {
+  font-size: 40px;
+  font-family: caghen;
+  padding: 10px 200px;
+  background: #242635;
+  color: #cab2ae;
+  border-radius: 10px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.727);
+}
+.cart-box {
+  display: flex;
+  justify-content: space-between;
+  background-color: #242635;
+  align-items: center;
+  margin: 1rem;
+  flex-direction: row;
+  /* margin-left: -5rem; */
+  padding: 10px 65px 10px 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 2px #242635;
+}
+.img {
+  width: 700px;
+  background: white;
+  height: 240px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.878);
+  border-radius: 10px;
+  padding: 10px;
+}
+.cart-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.detail-box{
+    display: grid;
+    row-gap: .6rem;
+    padding: 25px;
+}
+.cart-product-title{
+    color: #cab2ae;
+    font-size: 20px;
+    font-family: ramus;
+    text-transform: uppercase;
+}
+.cart-price{
+    color: #cab2ae;
+    margin-left: -175px;
+    font-family: ramus;
+    font-size: 17px;
+}
+.cart-quantity{
+    border: 1px solid #242635;
+    width: 50px;
     text-align: center;
+    font-size: 1rem;
+    font-family: ramus;
+    outline-color: #c21531;
 }
-.cart .head{
-    display: flex;
-    flex-direction: row;
+.cart-remove{
+    margin-left: -100px;
+    font-size: 20px;
+    color: #c21531;
+    cursor: pointer;
 }
-.cart .head h2{
+
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+  label {
     display: block;
-    margin: 5px 45px;
+  }
+  header .bx-menu {
+    display: block;
+  }
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #cab2ae;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: 0.5s ease;
+  }
+  header #toggler:checked ~ .navbar {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  header .navbar a {
+    margin: 10px;
+    padding: 5px;
+    background: #242635;
+    font-size: 20px;
+    border: 1rem solid rgba(0, 0, 0, 0.108);
+    display: block;
+    color: #c21531;
+  }
+  header .logo {
+    font-size: 45px;
+  }
+  header .icon a i {
+    font-size: 28px;
+    padding: 4px;
+  }
+}
+@media (max-width: 400px) {
+  header .logo {
+    font-size: 35px;
+  }
+  header .icon a i {
+    font-size: 28px;
+    padding: 2px;
+  }
 }

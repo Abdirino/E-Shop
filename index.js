@@ -1,3 +1,4 @@
+// slider.js
 $(document).ready(function () {
   $("#autoWidth").lightSlider({
     autoWidth: true,
@@ -7,29 +8,8 @@ $(document).ready(function () {
     },
   });
 });
+// slider.js end
 
-// $(document).ready(function() {
-//     var autoplaySlider = $('#autoplay').lightSlider({
-//         auto:true,
-//         loop:true,
-//         pauseOnHover: true,
-//         onBeforeSlide: function (el) {
-//             $('#current').text(el.getCurrentSlideCount());
-//         } 
-//     });
-//     $('#total').text(autoplaySlider.getTotalSlideCount());
-// });
+// add to cart
 
-// const observer = new IntersectionObserver((entries) => {
-//     entries.forEach((entry) => {
-//         console.log(entry);
-//         if(entry.isIntersecting){
-//             entry.target.classList.add('show')
-//         }else{
-//             entry.target.classList.remove('show')
-//         }
-//     })
-// })
-
-// const hiddenElements = document.querySelectorAll(".hidden");
-// hiddenElements.forEach((el) => observer.observe(el))
+// end add to cart

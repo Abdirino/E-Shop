@@ -36,9 +36,7 @@
 
         <div class="icon">
             <a href="#home" class=""><i class='bx bxs-home'></i></a>
-            <a href="cart.html" class="cart-tag"><i class='bx bx-cart-alt'></i>
-                <div class="cart-file" id="cart-num"></div>
-            </a>
+            <div class="cart"><a href="cart.html" class="cart-tag"><i class='bx bx-cart-alt'></i></a><p id="count">0</p></div>
         </div>
     </header>
     <!-- end nav sec -->
@@ -451,22 +449,12 @@
     </footer>
     <!-- end contact sec -->
 
-    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></scrip>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
         AOS.init();
-    </script> -->
+    </script>
 
     <script src="index.js"></script>
 </body>
-
-<script defer>
-    let cartFile = document.querySelector(".cart-file");
-    let cartNum = document.getElementById("cart-num");
-    var current = JSON.parse(sessionStorage.getItem("cart"));
-    if (current != null) {
-        cartNum.innerHTML = current[name];
-        cartFile.style.visibility = "visible";
-    }
-</script>
 
 </html>
