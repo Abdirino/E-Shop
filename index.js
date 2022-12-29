@@ -10,6 +10,7 @@ $(document).ready(function () {
 });
 // slider.js end
 
+
 // add to cart
 
 // end add to cart
