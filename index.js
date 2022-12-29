@@ -12,5 +12,6 @@ $(document).ready(function () {
 
 
 // add to cart
-
+          // remove item from cart
+          
 // end add to cart

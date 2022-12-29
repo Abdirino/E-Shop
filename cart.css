@@ -102,15 +102,6 @@ header .bx-menu {
   gap: 2rem;
   text-align: center;
 }
-.cart .cart-title {
-  font-size: 40px;
-  font-family: caghen;
-  padding: 10px 200px;
-  background: #242635;
-  color: #cab2ae;
-  border-radius: 10px;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.727);
-}
 .cart-box {
   display: flex;
   justify-content: space-between;
@@ -123,15 +114,15 @@ header .bx-menu {
   border-radius: 10px;
   box-shadow: 0 0 2px #242635;
 }
-.img {
-  width: 700px;
+.item-img {
+  width: 300px;
   background: white;
-  height: 240px;
+  height: 140px;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.878);
   border-radius: 10px;
   padding: 10px;
 }
-.cart-img {
+img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -141,32 +132,61 @@ header .bx-menu {
     row-gap: .6rem;
     padding: 25px;
 }
-.cart-product-title{
+.item-title{
     color: #cab2ae;
     font-size: 20px;
     font-family: ramus;
     text-transform: uppercase;
 }
-.cart-price{
+.item-price{
     color: #cab2ae;
-    margin-left: -175px;
     font-family: ramus;
     font-size: 17px;
 }
-.cart-quantity{
-    border: 1px solid #242635;
-    width: 50px;
-    text-align: center;
-    font-size: 1rem;
-    font-family: ramus;
-    outline-color: #c21531;
+.remove-item{
+  border: none;
+  padding: 5px 0;
+  background: #c21531;
+  color: #cab2ae;
+  border-radius: 4px;
+  font-family: ramus;
+  font-size: 17px;
+  cursor: pointer;
 }
-.cart-remove{
-    margin-left: -100px;
-    font-size: 20px;
-    color: #c21531;
-    cursor: pointer;
+.remove-item:hover{
+  background: #cab2ae;
+  color: #242635;
 }
+.total{
+  padding: 10px;
+  width: 500px;
+  border-top: 2px solid #242635;
+}
+.total-title{
+  font-size: 25px;
+  font-family: caghen;
+  color: #242635;
+}
+.total-price{
+  font-size: 20px;
+  font-family: ramus;
+  padding: 10px;
+}
+.btn-buy{
+  padding: 15px 20px;
+  background: #242635;
+  color: #c21531;
+  font-family: caghen;
+  border-radius: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  border: none;
+}
+.btn-buy:hover{
+  color: #242635;
+  background: #c21531;
+}
+
 
 
 
