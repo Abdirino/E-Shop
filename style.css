@@ -311,10 +311,6 @@ header .bx-menu{
 }
 
 .latest .items{
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-auto-rows: 300px;
-    gap: 1.5rem; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -327,20 +323,20 @@ header .bx-menu{
     margin: 15px;
     box-shadow: 7px 14px 28px rgba(0, 0, 0, 0.701);
     background: #242635;
-    border-radius: 20px;
+    border-radius: 10px;
     height: 410px;
     width: 300px;
     display: flex;
     flex-direction: column;
 }
-.latest .items .prod .image{
-    height: 220px;
+.latest .items .prod .details .image{
+    height: 165px;
     background: white;
-    /* width: 500px; */
-    border-radius: 20px;
+    width: 300px;
+    border-radius: 10px;
     overflow: hidden;
 }
-.latest .items .prod .image img{
+.latest .items .prod .details .image img{
     height: 100%;
     width: 100%;
     object-fit: contain;
@@ -359,18 +355,18 @@ header .bx-menu{
 .latest .items .prod .details .stars{
     display: flex;
     flex-direction: row;
-    padding: 12px 0 6px 0;
+    padding: 10px 0 6px 0;
 }
 .latest .items .prod .details i{
     font-size: 14px;
     color: #f79f1a;
-    padding: 4px;
+    padding: 3px;
 }
 .latest .items .prod .details p{
     color: white;
     line-height: 14px;
     font-family: ramus;
-    padding: 6px;
+    padding: 10px;
 }
 .latest .items .prod .details .buy{
     display: flex;
