@@ -99,7 +99,12 @@ header .bx-menu {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  text-align: center;
+  /* text-align: center; */
+}
+.cart-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .cart-box {
   display: flex;
@@ -108,11 +113,13 @@ header .bx-menu {
   align-items: center;
   margin: 12px;
   flex-direction: row;
+  flex-wrap: wrap;
   /* margin-left: -5rem; */
   padding: 10px;
   border-radius: 10px;
 }
 .item-img {
+  flex: 1 1 200px;
   width: 200px;
   overflow: hidden;
   background: white;
@@ -126,6 +133,7 @@ img {
   object-fit: contain;
 }
 .detail-box{
+  flex: 1 1 200px;
     display: grid;
     row-gap: .5rem;
     padding: 20px;

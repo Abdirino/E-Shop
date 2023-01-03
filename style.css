@@ -329,14 +329,14 @@ header .bx-menu{
     display: flex;
     flex-direction: column;
 }
-.latest .items .prod .image{
-    /* height: 165px; */
+.latest .items .prod .details .image{
+    height: 170px;
     background: white;
-    /* width: 300px; */
+    width: 300px;
     border-radius: 10px;
     overflow: hidden;
 }
-.latest .items .prod .image img{
+.latest .items .prod .details .image img{
     height: 100%;
     width: 100%;
     object-fit: contain;
