@@ -54,10 +54,11 @@ function quantityChange(event) {
 
 function addToCartClicked(event) {
   let add = event.target
+  let SItem = add.parentElement;
+  let imgSrc = shopItem.getElementsByClassName("item-img")[0].src;
   let shopItem = add.parentElement.parentElement;
   let title = shopItem.getElementsByClassName("item-title")[0].innerText;
   let value = shopItem.getElementsByClassName("item-price")[0].innerText;
-  let imgSrc = shopItem.getElementsByClassName("item-img")[0].src;
   console.log(title, value, imgSrc);
   addItemToCart(title, value, imgSrc);
 }

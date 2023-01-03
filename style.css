@@ -329,14 +329,14 @@ header .bx-menu{
     display: flex;
     flex-direction: column;
 }
-.latest .items .prod .details .image{
-    height: 165px;
+.latest .items .prod .image{
+    /* height: 165px; */
     background: white;
-    width: 300px;
+    /* width: 300px; */
     border-radius: 10px;
     overflow: hidden;
 }
-.latest .items .prod .details .image img{
+.latest .items .prod .image img{
     height: 100%;
     width: 100%;
     object-fit: contain;
@@ -381,21 +381,23 @@ header .bx-menu{
     border-bottom: 2px solid white;
     margin-right: 20px;
 }
-.latest .items .prod .details .buy a{
+.latest .items .prod .details .buy button{
     padding: 10px;
+    border: none;
     margin-left: 20px;
     background: #c21531;
     text-align: center;
     font-family: ramus;
     color: black;
     border-radius: 5px;
+    cursor: pointer;
 }
-.latest .items .prod .details .buy a:hover{
+.latest .items .prod .details .buy button:hover{
     box-shadow: 10px 7px 4px #c21531;
     background: #cab2ae;
     color: #242635;
 }
-.latest .items .prod .details .buy a:active{
+.latest .items .prod .details .buy button:active{
     box-shadow: 8px 4px 4px #c21531;
     background: #cab2ae;
     color: #242635;
@@ -403,7 +405,7 @@ header .bx-menu{
 /* end product sec */
 /* offers sec */
 .offers{
-    padding: 50px 0;
+    padding: 65px 0;
     display: flex;
     justify-content: center;
     flex-direction: row;
