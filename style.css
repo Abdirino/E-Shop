@@ -250,7 +250,7 @@ header .bx-menu{
     box-shadow: 9px 18px 32px rgba(0, 0, 0, 0.686);
     flex-direction: column;
     height: 300px;
-    text-align: center;
+    /* text-align: center; */
     transition: 1s ease;
 }
 .product:hover{
@@ -292,114 +292,88 @@ header .bx-menu{
     background: #242635;
     color: #cab2ae;
 }
-.latest{
-    width: 100%;
-    padding: 70px 0;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: #f79f1a;
+
+
+.cart{
+    position: fixed;
+    top: 0; right: 0;
+    width: 360px;
+    min-height: 100vh;
+    padding: 20px;
+    background: #cab2ae;
+    box-shadow: -2px 0 4px #242635;
 }
-.latest h1{
+.cart-title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1.2rem;
     font-family: caghen;
-    font-size: 40px;
-    color: #c21531;
-    background: #242635;
-    padding: 16px 150px;
 }
 
-.latest .items{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 25px 0;
+section{
+    padding: 3rem 1rem;
 }
-.latest .items .prod{
-    flex: 1 1 300px;
-    padding: 10px;
-    margin: 15px;
-    box-shadow: 7px 14px 28px rgba(0, 0, 0, 0.701);
-    background: #242635;
-    border-radius: 10px;
-    height: 410px;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-}
-.latest .items .prod .details .image{
-    height: 170px;
-    background: white;
-    width: 300px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-.latest .items .prod .details .image img{
-    height: 100%;
+.containerer{
+    margin: auto;
+    max-width: 1068px;
     width: 100%;
-    object-fit: contain;
 }
-.latest .items .prod .details{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.latest .items .prod .details h2{
-    color: white;
-    font-family: caghen;
-    padding: 17px 0 5px 0;
-}
-.latest .items .prod .details .stars{
-    display: flex;
-    flex-direction: row;
-    padding: 10px 0 6px 0;
-}
-.latest .items .prod .details i{
-    font-size: 14px;
-    color: #f79f1a;
-    padding: 3px;
-}
-.latest .items .prod .details p{
-    color: white;
-    line-height: 14px;
-    font-family: ramus;
-    padding: 10px;
-}
-.latest .items .prod .details .buy{
-    display: flex;
-    flex-direction: row;
-    /* justify-content: space-between; */
-    padding: 8px;
-}
-.latest .items .prod .details .buy p{
-    font-weight: lighter;
-    padding: 10px;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
-    margin-right: 20px;
-}
-.latest .items .prod .details .buy button{
-    padding: 10px;
-    border: none;
-    margin-left: 20px;
-    background: #c21531;
-    text-align: center;
-    font-family: ramus;
-    color: black;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.latest .items .prod .details .buy button:hover{
-    box-shadow: 10px 7px 4px #c21531;
-    background: #cab2ae;
+.section-title{
+    font-size: 3rem;
+    padding: 1rem 3rem;
     color: #242635;
+    font-weight: 600;
+    text-align: center;
+    font-family: caghen;
 }
-.latest .items .prod .details .buy button:active{
-    box-shadow: 8px 4px 4px #c21531;
-    background: #cab2ae;
+.shop{
+    margin-top: 1rem;
+}
+.shop-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 1.2rem;
+    padding: 20px 0;
+}
+.product-box{
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #242635;
+}
+.product-box:hover{
+    padding: 8px;
+    transform: 1s ease;
+}
+.product-img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+.product-box img{
+    width: 100%;
+}
+.product-title{
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    font-family: ramus;
+}
+.price{
+    font-weight: 800;
+    font-family: ramus;
+}
+.add-cart{
+    color: #cab2ae;
+    background: #242635;
+    padding: 10px 45px;
+    cursor: pointer;
+    margin: 8px 0;
+}
+.add-cart:hover{
+    background: #c21531;
     color: #242635;
 }
 /* end product sec */
@@ -497,8 +471,9 @@ header .bx-menu{
     font-family: ramus;
 }
 /* end offers sec */
+
 /* contact sec */
-.container{
+.contain{
     max-width: 90%;
     margin: auto;
 }
