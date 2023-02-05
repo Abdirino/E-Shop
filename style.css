@@ -297,7 +297,7 @@ header .bx-menu{
 .cart{
     position: fixed;
     top: 0; right: 0;
-    width: 360px;
+    width: 460px;
     min-height: 100vh;
     padding: 20px;
     background: #cab2ae;
@@ -309,6 +309,17 @@ header .bx-menu{
     font-weight: 600;
     margin-top: 1.2rem;
     font-family: caghen;
+}
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.cart-box img{
+    width: 100%;
+    height: auto;
 }
 
 section{
