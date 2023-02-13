@@ -300,7 +300,7 @@ header .bx-menu {
 .cart {
   position: fixed;
   top: 0;
-  right: -100%;
+  right: 0;
   width: 460px;
   min-height: 100vh;
   padding: 20px;
